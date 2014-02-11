@@ -1,4 +1,4 @@
-from storage._compat import with_metaclass
+from storage_interfaces._compat import with_metaclass
 from abc import ABCMeta
 
 SG_TYPE = 1

@@ -1,5 +1,5 @@
-from storage._compat import with_metaclass
-from storage.abstracts import EndPoint
+from storage_interfaces._compat import with_metaclass
+from storage_interfaces.abstracts import EndPoint
 from abc import ABCMeta
 
 class ScsiSystem(with_metaclass(ABCMeta)):
