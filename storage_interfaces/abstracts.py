@@ -4,6 +4,7 @@ from abc import ABCMeta
 SG_TYPE = 1
 FILE_TYPE = 2
 PATH_TYPE = 3
+NFS_TYPE = 3
 
 
 class EndPoint(with_metaclass(ABCMeta)):
