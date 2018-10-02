@@ -9,9 +9,10 @@ _INSTALL_REQUIERS = []
 
 setup(name="storage_interfaces",
       classifiers = [
-          "Programming Language :: Python :: 2.6",
           "Programming Language :: Python :: 2.7",
-          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
           ],
       description="Abstract classes for representing storage-related objects",
       license="BSD3",

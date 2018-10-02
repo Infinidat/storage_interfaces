@@ -1,8 +1,19 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.3"
-  - "pypy"
-script: 
-  - "python _test_build.py"
+  - "3.5"
+  - "3.6"
+install:
+  - pip install nose
+  - pip install -e .
+script: nosetests -w tests
+jobs:
+  include:
+    - stage: deploy
+      python: 3.6
+      install: pip install twine
+      script:
+        - python setup.py sdist bdist_wheel
+        - twine upload -u $PYPI_USERNAME -p $PYPI_PASSWORD dist/*
+      if: tag IS present
+
