@@ -1,4 +1,4 @@
-from storage_interfaces._compat import with_metaclass
+from storage_interfaces._compat import with_metaclass  # pylint: disable=no-name-in-module
 from abc import ABCMeta
 
 SG_TYPE = 1

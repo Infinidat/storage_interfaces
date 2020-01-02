@@ -1,3 +1,4 @@
+# pylint: disable=undefined-variable,import-error,exec-used,redefined-builtin
 import sys
 
 PY2 = sys.version_info[0] == 2
