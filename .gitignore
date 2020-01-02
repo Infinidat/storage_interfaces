@@ -6,3 +6,6 @@ build
 flycheck-*
 dist
 .env
+.eggs
+AUTHORS
+ChangeLog
