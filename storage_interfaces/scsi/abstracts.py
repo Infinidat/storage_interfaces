@@ -1,4 +1,4 @@
-from storage_interfaces._compat import with_metaclass
+from storage_interfaces._compat import with_metaclass  # pylint: disable=no-name-in-module
 from storage_interfaces.abstracts import EndPoint
 from abc import ABCMeta
 

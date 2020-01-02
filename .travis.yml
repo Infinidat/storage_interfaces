@@ -5,7 +5,9 @@ python:
   - "3.6"
 install:
   - pip install -e ".[testing]"
-script: pytest tests
+script:
+- pylint --rcfile=.pylintrc storage_interfaces tests setup.py
+- pytest tests
 jobs:
   include:
     - stage: deploy
