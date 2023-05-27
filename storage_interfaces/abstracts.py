@@ -6,6 +6,7 @@ FILE_TYPE = 2
 PATH_TYPE = 3
 NFS_TYPE = 4
 NVME_TYPE = 5
+SMB_TYPE = 6
 
 
 class EndPoint(with_metaclass(ABCMeta)):
